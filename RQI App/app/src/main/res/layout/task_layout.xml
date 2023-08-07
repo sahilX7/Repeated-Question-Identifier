@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/master_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:gravity="bottom"
+                android:paddingBottom="2dp"
+                android:textSize="20dp"
+                android:text="Question 1"/>
+
+            <TextView
+                android:id="@+id/ques1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textSize="19dp"
+                android:maxLines="1"
+                android:textColor="@color/light_black"
+                tools:text="Description" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:gravity="bottom"
+                android:paddingBottom="2dp"
+                android:textSize="20dp"
+                android:text="Question 2"/>
+
+            <TextView
+                android:id="@+id/ques2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textSize="19dp"
+                android:maxLines="1"
+                android:textColor="@color/light_black"
+                tools:text="Description" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/taskCheckedAt"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            tools:text="11/11/1111" />
+
+    </LinearLayout>
+</LinearLayout>

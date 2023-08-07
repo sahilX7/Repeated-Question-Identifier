@@ -1,0 +1,9 @@
+re
+bs4
+distance
+fuzzywuzzy
+numpy
+flask
+request
+jsonify
+sklearn
